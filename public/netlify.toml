@@ -1,0 +1,5 @@
+[[redirects]]
+from = '/proxy_kobis/*'
+to = 'https://kobis.or.kr/:splat'
+status = 200
+force = true
