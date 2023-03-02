@@ -5,8 +5,8 @@
 ## 사용기술
 HTML, CSS, React JS, Live Crawling
 
-### `HTML, CSS`
-HTML5
+### `HTML & CSS`
+HTML5, CSS
 
 ### `React JS & modules`
 > "prop-types": "^15.8.1"   
