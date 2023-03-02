@@ -1,0 +1,92 @@
+.movie {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 8px 8px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 95%; */
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #aaa;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  background-color: #efefef;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 1.5;
+  height: 100%;
+}
+.bold {
+  font-weight: bold;
+}
+.red {
+  color: red;
+}
+
+img {
+  width: 50%;
+  padding-right: 10px;
+}
+
+.rank_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc ;
+  border-bottom: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px #aaa;
+  padding: 0 5px;
+  margin: 0 0 0 10px;
+  background-color: #ccc;
+}
+.rankicon {
+  width: 18px;
+  height: 18px;
+  padding: 0px;
+}
+.ranktext {
+  color:#333;
+  font-size: 18px;
+  text-shadow: none;
+}
+.ranknew {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+@media (max-width: 760px) {
+  .movie {
+    width: 100%;
+  }
+}
+
+.detail {
+  width: 48%;
+  box-sizing: border-box;
+  border-top: 1px dotted #eee;
+  border-left: 1px dotted #eee;
+  padding: 15px 10px 10px 15px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 2px #ddd;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+}
+li {
+  font-size: 0.8rem;
+}

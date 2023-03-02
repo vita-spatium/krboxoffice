@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# KR BOX Office React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 토이 프로젝트(Toy Project)는 React와 Open API를 사용하여 개발하였습니다.
 
-## Available Scripts
+## 사용기술
+HTML, CSS, React JS, Live Crawling
 
-In the project directory, you can run:
+### `HTML, CSS`
+HTML5
 
-### `npm start`
+### `React JS & modules`
+"prop-types": "^15.8.1"
+"react": "^18.2.0"
+"react-dom": "^18.2.0"
+"react-scripts": "5.0.1"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+"reset-css": "^5.0.1
+ - reset css
+  
+"date-fns": "^2.29.3"
+ - date formatting
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+"http-proxy-middleware": "^2.0.6"
+ - CORS error 해결을 위해 개발환경 설정.
 
-### `npm test`
+### `OPEN API`
+영화진흥위원회 OPEN API
+https://www.kobis.or.kr/kobisopenapi/homepg/apiservice/searchServiceInfo.do
+- 일별 박스오피스 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Live Crawling`
+영화진흥위원회 OPEN API는 포스터 이미지를 제공하고 있지 않습니다.
+이를 해결하기위해 영화진흥위원회의 영화 상세정보에서 포스터 이미지를 실시간으로 조회하고 있습니다.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+매번 조회할 때 마다 포스터를 가져오기 때문에 효율은 좋지 않으므로, 추후 DB에 링크를 저장하고 조회 시 DB에 없는 포스터가 있다면 가져오도록 수정할 계획입니다.

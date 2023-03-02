@@ -1,0 +1,6 @@
+.poster {
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px #999;
+  padding: 0 5px;
+  margin: 0 5px;
+}
