@@ -9,19 +9,19 @@ HTML, CSS, React JS, Live Crawling
 HTML5
 
 ### `React JS & modules`
-> "prop-types": "^15.8.1"
-> "react": "^18.2.0"
-> "react-dom": "^18.2.0"
-> "react-scripts": "5.0.1"
->
-> "reset-css": "^5.0.1
->  - reset css
->  
-> "date-fns": "^2.29.3"
->  - date formatting
->
-> "http-proxy-middleware": "^2.0.6"
-> - CORS error 해결을 위해 개발환경 설정.
+> "prop-types": "^15.8.1"   
+> "react": "^18.2.0"   
+> "react-dom": "^18.2.0"   
+> "react-scripts": "5.0.1"   
+>   
+> "reset-css": "^5.0.1   
+>  - reset css   
+>   
+> "date-fns": "^2.29.3"   
+>  - date formatting   
+>   
+> "http-proxy-middleware": "^2.0.6"   
+> - CORS error 해결을 위해 개발환경 설정.   
 
 ### `OPEN API`
 영화진흥위원회 OPEN API   
