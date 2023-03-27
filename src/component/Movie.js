@@ -7,10 +7,14 @@ function numberFormat(number) {
 }
 
 function calcDaysSinceOpenDt(opendt) {
-  const today = new Date();
-  const openday = new Date(opendt);
 
-  return intervalToDuration({ start: openday, end: today }).days + 1;
+  if (opendt === " ") return 0;
+  
+  const today = new Date();  
+  const custTime = '00:00:00.000Z';
+  const openday = new Date(`${opendt} ${custTime}`);
+
+  return intervalToDuration({ start: openday, end: today }).days;
 }
 
 function rankDirection(rankInten) {
